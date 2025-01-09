@@ -8,7 +8,7 @@ const Relate4 = () => {
 
   const getCase = async () => {
     try {
-      const res = await axios.get("http://16.170.206.64/api/getcase");
+      const res = await axios.get("http://16.170.206.64:80/api/getcase");
       setProducts(res.data);
     } catch (error) {
       console.error("Error fetching product data:", error);
