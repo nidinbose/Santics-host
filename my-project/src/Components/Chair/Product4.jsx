@@ -12,7 +12,7 @@ const Product4 = () => {
 
   const getCase = async () => {
     try {
-      const res = await axios.get("http://localhost:3003/api/getcase");
+      const res = await axios.get("http://16.170.206.64/api/getcase");
       setProducts(res.data);
     } catch (error) {
       console.error("Error fetching product data:", error);
@@ -46,7 +46,7 @@ const Product4 = () => {
       };
 
       console.log(data);
-      await axios.post("http://localhost:3003/api/add-to-cart", data, config);
+      await axios.post("http://16.170.206.64/api/add-to-cart", data, config);
       alert("Product added to cart successfully!");
     } catch (error) {
       console.error("Error adding product to cart:", error);

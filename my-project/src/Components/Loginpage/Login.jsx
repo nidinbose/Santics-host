@@ -49,7 +49,7 @@ const Login = () => {
     setErrors({});
 
     try {
-      const response = await axios.post("http://localhost:3003/api/login", {
+      const response = await axios.post("http://16.170.206.64/api/login", {
         email: formData.email,
         password: formData.password,
       });
